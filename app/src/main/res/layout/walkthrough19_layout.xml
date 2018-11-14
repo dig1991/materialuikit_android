@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/walkthrough19Background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/titleContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:paddingBottom="18dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:paddingTop="48dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Welcome!"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/titleContainer"
+            android:elevation="5dp"
+            android:paddingBottom="70dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="55dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                app:cardBackgroundColor="@color/profile5CardGray">
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/titleContainer"
+            android:elevation="10dp"
+            android:paddingBottom="80dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="72dp"
+            android:animateLayoutChanges="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/indicator1"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/ic_dot_grey" />
+
+            <View
+                android:id="@+id/indicator2"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/ic_dot_grey" />
+
+            <View
+                android:id="@+id/indicator3"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/ic_dot_grey" />
+
+            <View
+                android:id="@+id/indicator4"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/ic_dot_grey" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnContinue"
+        style="@style/ButtonWhite"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_gravity="bottom"
+        android:onClick="onClick"
+        android:textAllCaps="false"
+        android:text="Continue"/>
+
+</FrameLayout>

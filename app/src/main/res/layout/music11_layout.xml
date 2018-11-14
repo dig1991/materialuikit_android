@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_above="@+id/playDashboard"
+            android:layout_marginTop="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/playDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/music4colorPrimary">
+
+            <TextView
+                android:id="@+id/dislayNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="00:00"
+                android:textColor="@android:color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/dislayTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:text="1:32"
+                android:textColor="@android:color/white"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/buttonRepeat"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginBottom="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/buttonPrev"
+                app:srcCompat="@drawable/ic_repeat" />
+
+            <ImageView
+                android:id="@+id/buttonPrev"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:layout_constraintBottom_toBottomOf="@+id/buttonRepeat"
+                app:layout_constraintLeft_toRightOf="@+id/buttonRepeat"
+                app:layout_constraintRight_toLeftOf="@+id/buttonPlay"
+                app:layout_constraintTop_toTopOf="@+id/buttonRepeat"
+                app:srcCompat="@drawable/ic_skip_previous_white" />
+
+            <ImageView
+                android:id="@+id/buttonPlay"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:layout_constraintBottom_toBottomOf="@+id/buttonPrev"
+                app:layout_constraintLeft_toRightOf="@+id/buttonPrev"
+                app:layout_constraintRight_toLeftOf="@+id/buttonNext"
+                app:layout_constraintTop_toTopOf="@+id/buttonPrev"
+                app:srcCompat="@drawable/ic_play_white2" />
+
+            <ImageView
+                android:id="@+id/buttonNext"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:layout_constraintBottom_toBottomOf="@+id/buttonPlay"
+                app:layout_constraintLeft_toRightOf="@+id/buttonPlay"
+                app:layout_constraintRight_toLeftOf="@+id/buttonShuffle"
+                app:layout_constraintTop_toTopOf="@+id/buttonPlay"
+                app:srcCompat="@drawable/ic_skip_next_white" />
+
+            <ImageView
+                android:id="@+id/buttonShuffle"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                app:layout_constraintBottom_toBottomOf="@+id/buttonNext"
+                app:layout_constraintLeft_toRightOf="@+id/buttonNext"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/buttonNext"
+                app:srcCompat="@drawable/ic_shuffle" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/playDashboard"
+            android:layout_marginBottom="-7dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_centerVertical="true"
+                android:background="@color/music5seekBg" />
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="0dp"
+                android:thumb="@drawable/music4_seek_audio_thumb" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="1dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp" />
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>

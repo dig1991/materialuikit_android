@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ecommerce24background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonContainer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_ahalf_horizontal_margin">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_ahalf_horizontal_margin"
+                android:text="CHOOSE PAYMENT METHOD"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_ahalf_horizontal_margin">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp">
+
+                        <RadioButton
+                            android:id="@+id/shippingCost1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="onRadioCliked"
+                            android:paddingTop="8dp"
+                            android:text=""
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="38dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ecommerce_25_logo_paypal" />
+
+                        <LinearLayout
+                            android:id="@+id/buttonSetEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:onClick="onClick"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="arno@gmail.com"
+                                android:textColor="@color/ecommerce25fontGray" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_next_gray" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/ecommerce24SplitterGray" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp">
+
+                        <RadioButton
+                            android:id="@+id/shippingCost2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="onRadioCliked"
+                            android:text=""
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="38dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ecommerce_25_logo_google_wallet" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/ecommerce24SplitterGray" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp">
+
+                        <RadioButton
+                            android:id="@+id/shippingCost3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:onClick="onRadioCliked"
+                            android:text=""
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="38dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ecommerce_25_logo_cc" />
+
+                        <LinearLayout
+                            android:id="@+id/buttonSetCardInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:onClick="onClick"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1923-6789-XXXX"
+                                android:textColor="@color/ecommerce25fontGray" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_next_gray" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </RadioGroup>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_ahalf_horizontal_margin"
+                android:text="CARD INFORMATION"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                style="@style/Ecommerce25Input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_ahalf_horizontal_margin"
+                android:hint="Full Name"
+                android:padding="12dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_ahalf_horizontal_margin"
+                android:text="14 Digits Card Number"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_ahalf_horizontal_margin">
+
+                <EditText
+                    style="@style/Ecommerce24Input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/activity_ahalf_horizontal_margin"
+                    android:layout_weight="1"
+                    android:hint="1928"
+                    android:padding="12dp"
+                    android:textSize="12sp" />
+
+                <EditText
+                    style="@style/Ecommerce24Input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/activity_ahalf_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_ahalf_horizontal_margin"
+                    android:layout_weight="1"
+                    android:hint="2895"
+                    android:padding="12dp"
+                    android:textSize="12sp" />
+
+                <EditText
+                    style="@style/Ecommerce24Input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/activity_ahalf_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_ahalf_horizontal_margin"
+                    android:layout_weight="1"
+                    android:hint="2895"
+                    android:padding="12dp"
+                    android:textSize="12sp" />
+
+                <EditText
+                    style="@style/Ecommerce24Input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_ahalf_horizontal_margin"
+                    android:layout_weight="1"
+                    android:inputType="textPassword"
+                    android:hint="****"
+                    android:padding="12dp"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_ahalf_horizontal_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/activity_ahalf_horizontal_margin"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/activity_ahalf_horizontal_margin">
+
+                    <Spinner
+                        android:id="@+id/spinnerExpDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <EditText
+                    style="@style/Ecommerce24Input"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="@dimen/activity_ahalf_horizontal_margin"
+                    android:layout_weight="1"
+                    android:inputType="textPassword"
+                    android:hint="CVV"
+                    android:padding="12dp"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btnNext"
+            style="@style/ButtonYellow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

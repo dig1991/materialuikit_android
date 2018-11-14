@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ecommerce7background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonContainer"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="430dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:elevation="5dp"
+                android:paddingTop="50dp">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="370dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginRight="48dp"
+                    app:cardBackgroundColor="@color/ecommerce7background">
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:elevation="10dp"
+                android:paddingTop="30dp">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="370dp"
+                    android:layout_marginLeft="37dp"
+                    android:layout_marginRight="37dp">
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:elevation="10dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ecommerce7background"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <Button
+            android:id="@+id/btnBuyNow"
+            style="@style/ButtonYellow"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="@dimen/activity_ahalf_horizontal_margin"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Buy Now"
+            android:textColor="@android:color/white" />
+
+        <RelativeLayout
+            android:id="@+id/btnAddToChart"
+            style="@style/ButtonWhite"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginStart="@dimen/activity_ahalf_horizontal_margin"
+            android:layout_weight="1"
+            android:onClick="onClick">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:drawableLeft="@drawable/ic_shopping_cart_small"
+                android:text="Add to Cart"
+                android:textAllCaps="false" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

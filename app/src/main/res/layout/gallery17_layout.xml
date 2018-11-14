@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_gallery_style16"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer" />
+
+    <RelativeLayout
+        android:id="@+id/foregroundColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gallery12_gradient_bg" />
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="6dp"
+            android:paddingTop="12dp"
+            android:text="Hipster Girl Round Glasses"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="12dp"
+            android:text="1 of 24 photos"
+            android:textColor="@color/profile17fontGray"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/buttonPrev"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="14dp"
+            android:onClick="onClick"
+            app:cardBackgroundColor="@color/gallery17IconBgDisable"
+            app:cardCornerRadius="21dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:src="@drawable/ic_prev" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/buttonNext"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="14dp"
+            android:onClick="onClick"
+            app:cardBackgroundColor="@color/gallery17IconBg"
+            app:cardCornerRadius="21dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:src="@drawable/ic_next" />
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

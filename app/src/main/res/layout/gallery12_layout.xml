@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_gallery_style12"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+    <RelativeLayout
+        android:id="@+id/foregroundColor"
+        android:background="@drawable/gallery12_gradient_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp">
+
+        <TextView
+            android:text="White Stripes Hipster Girl"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:paddingStart="12dp"
+            android:paddingBottom="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Added yesterday 19:30"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:layout_marginBottom="8dp"
+            android:paddingStart="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

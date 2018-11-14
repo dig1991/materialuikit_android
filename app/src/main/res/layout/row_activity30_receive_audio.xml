@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/audioLeftArrow"
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:background="@drawable/activity24_chat_shape2"
+            android:elevation="2dp"
+            android:orientation="vertical" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:layout_marginEnd="32dp"
+            android:layout_toEndOf="@+id/audioLeftArrow"
+            android:background="@drawable/activity24_chat_shape1"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/buttonAudio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/ic_play" />
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/buttonAudio"
+                android:thumb="@drawable/seek_audio_thumb" />
+
+            <TextView
+                android:id="@+id/presentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/seekbar"
+                android:layout_below="@+id/seekbar"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="4dp"
+                android:text="23:34"
+                android:textColor="@color/activity8fontGray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/totalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="right"
+                android:text="23:34"
+                android:textColor="@color/activity8fontGray"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginsignup23_bg"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:elevation="6dp">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:paddingRight="10dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Activity"
+                    android:textSize="21sp" />
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/profile16background"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:paddingBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/profile16timeline" />
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="6dp"
+                            android:layout_height="6dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            app:cardBackgroundColor="@color/profile16DotGreen"
+                            app:cardCornerRadius="3dp">
+
+                        </android.support.v7.widget.CardView>
+
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:text="Gabriella Madelaine " />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="4dp"
+                                    android:textColor="@color/activity1fontGray"
+                                    android:text="Posted a photo" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/image1"
+                                android:layout_width="match_parent"
+                                android:src="@mipmap/loginsignup6_bg"
+                                android:layout_height="120dp"
+                                android:layout_marginBottom="12dp"
+                                android:layout_marginTop="12dp"
+                                android:scaleType="centerCrop" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:drawableLeft="@mipmap/ic_love_red"
+                                    android:drawablePadding="4dp"
+                                    android:text="34"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:drawableLeft="@mipmap/ic_viewer_blue"
+                                    android:drawablePadding="4dp"
+                                    android:text="456"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_weight="3"
+                                    android:orientation="horizontal"
+                                    android:gravity="right|end"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:drawableLeft="@mipmap/ic_clock_small"
+                                        android:drawableStart="@mipmap/ic_clock_small"
+                                        android:drawablePadding="5dp"
+                                        android:text="An hour ago"
+                                        android:textColor="@color/activity1fontGray"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/profile16timeline" />
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="6dp"
+                            android:layout_height="6dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            app:cardBackgroundColor="@color/profile16DotYellow"
+                            app:cardCornerRadius="3dp">
+
+                        </android.support.v7.widget.CardView>
+
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:text="Tomy Ramirez " />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="4dp"
+                                    android:textColor="@color/activity1fontGray"
+                                    android:text="Posted a tought" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="12dp"
+                                android:layout_marginTop="12dp"
+                                android:scaleType="centerCrop"
+                                android:text="You're a work of art, not eeveryone will understand you, but the ones that do, will never forget you." />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:drawableLeft="@mipmap/ic_love_red"
+                                    android:drawablePadding="4dp"
+                                    android:text="34"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:drawableLeft="@mipmap/ic_viewer_blue"
+                                    android:drawablePadding="4dp"
+                                    android:text="456"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_weight="3"
+                                    android:orientation="horizontal"
+                                    android:gravity="right|end"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:drawableLeft="@mipmap/ic_clock_small"
+                                        android:drawableStart="@mipmap/ic_clock_small"
+                                        android:drawablePadding="5dp"
+                                        android:text="3 days ago"
+                                        android:textColor="@color/activity1fontGray"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/profile16timeline" />
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="6dp"
+                            android:layout_height="6dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            app:cardBackgroundColor="@color/profile16DotGreen"
+                            app:cardCornerRadius="3dp">
+
+                        </android.support.v7.widget.CardView>
+
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Posted a Photo"
+                                android:textColor="@color/profile16fontGray" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/friend1"
+                                    android:layout_margin="8dp"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:src="@drawable/profiile_pic" />
+
+                                <ImageView
+                                    android:id="@+id/friend2"
+                                    android:layout_margin="8dp"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:src="@drawable/profiile_pic" />
+
+                                <ImageView
+                                    android:id="@+id/friend3"
+                                    android:layout_margin="8dp"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:src="@drawable/profiile_pic" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:drawableLeft="@mipmap/ic_love_red"
+                                    android:drawablePadding="4dp"
+                                    android:text="34"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:drawableLeft="@mipmap/ic_viewer_blue"
+                                    android:drawablePadding="4dp"
+                                    android:text="456"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_weight="3"
+                                    android:orientation="horizontal"
+                                    android:gravity="right|end"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:drawableLeft="@mipmap/ic_clock_small"
+                                        android:drawableStart="@mipmap/ic_clock_small"
+                                        android:drawablePadding="5dp"
+                                        android:text="An hour ago"
+                                        android:textColor="@color/activity1fontGray"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/profile16timeline" />
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="6dp"
+                            android:layout_height="6dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            app:cardBackgroundColor="@color/profile16DotGreen"
+                            app:cardCornerRadius="3dp">
+
+                        </android.support.v7.widget.CardView>
+
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:text="Jean Basquiat " />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="4dp"
+                                    android:textColor="@color/activity1fontGray"
+                                    android:text="Posted a photo" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/image2"
+                                android:layout_width="match_parent"
+                                android:src="@mipmap/loginsignup6_bg"
+                                android:layout_height="120dp"
+                                android:layout_marginBottom="12dp"
+                                android:layout_marginTop="12dp"
+                                android:scaleType="centerCrop" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:drawableLeft="@mipmap/ic_love_red"
+                                    android:drawablePadding="4dp"
+                                    android:text="13545"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:drawableLeft="@mipmap/ic_viewer_blue"
+                                    android:drawablePadding="4dp"
+                                    android:text="23432"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_weight="3"
+                                    android:orientation="horizontal"
+                                    android:gravity="right|end"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:drawableLeft="@mipmap/ic_clock_small"
+                                        android:drawableStart="@mipmap/ic_clock_small"
+                                        android:drawablePadding="5dp"
+                                        android:text="An hour ago"
+                                        android:textColor="@color/activity1fontGray"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header_loginsignup" />
+
+</android.support.v4.widget.DrawerLayout>

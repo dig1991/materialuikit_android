@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/activity17timeline" />
+
+                <ImageView
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:src="@drawable/activity17_icon1"
+                    android:layout_width="@dimen/activity17_icon_size"
+                    android:layout_height="@dimen/activity17_icon_size" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textDescription1"
+                        android:layout_marginRight="8dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/timed1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="text" />
+
+                    <TextView
+                        android:id="@+id/timed1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawableLeft="@mipmap/ic_clock_small"
+                        android:drawablePadding="5dp"
+                        android:drawableStart="@mipmap/ic_clock_small"
+                        android:text="1 m"
+                        android:textColor="@color/activity1fontGray"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity17_splitter_height">
+
+            <RelativeLayout
+                android:layout_weight="7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="match_parent"
+                    android:background="@color/activity17timeline" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_gravity="center_vertical"
+                android:background="@color/activity17Splitter"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/activity17timeline" />
+
+                <ImageView
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:src="@drawable/activity17_icon2"
+                    android:layout_width="@dimen/activity17_icon_size"
+                    android:layout_height="@dimen/activity17_icon_size" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textDescription2"
+                        android:layout_marginRight="8dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/timed2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="text" />
+
+                    <TextView
+                        android:id="@+id/timed2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawableLeft="@mipmap/ic_clock_small"
+                        android:drawablePadding="5dp"
+                        android:drawableStart="@mipmap/ic_clock_small"
+                        android:text="3 m"
+                        android:textColor="@color/activity1fontGray"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity17_splitter_height">
+
+            <RelativeLayout
+                android:layout_weight="7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="match_parent"
+                    android:background="@color/activity17timeline" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_gravity="center_vertical"
+                android:background="@color/activity17Splitter"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/activity17timeline" />
+
+                <ImageView
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:src="@drawable/activity17_icon3"
+                    android:layout_width="@dimen/activity17_icon_size"
+                    android:layout_height="@dimen/activity17_icon_size" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textDescription3"
+                        android:layout_marginRight="8dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/timed3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="text" />
+
+                    <TextView
+                        android:id="@+id/timed3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawableLeft="@mipmap/ic_clock_small"
+                        android:drawablePadding="5dp"
+                        android:drawableStart="@mipmap/ic_clock_small"
+                        android:text="3 h"
+                        android:textColor="@color/activity1fontGray"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="match_parent"
+                    android:src="@mipmap/loginsignup6_bg"
+                    android:layout_marginBottom="12dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity17_splitter_height">
+
+            <RelativeLayout
+                android:layout_weight="7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="match_parent"
+                    android:background="@color/activity17timeline" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_gravity="center_vertical"
+                android:background="@color/activity17Splitter"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/activity17timeline" />
+
+                <ImageView
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:src="@drawable/activity17_icon4"
+                    android:layout_width="@dimen/activity17_icon_size"
+                    android:layout_height="@dimen/activity17_icon_size" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textDescription4"
+                        android:layout_marginRight="8dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/timed4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="text" />
+
+                    <TextView
+                        android:id="@+id/timed4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawableLeft="@mipmap/ic_clock_small"
+                        android:drawablePadding="5dp"
+                        android:drawableStart="@mipmap/ic_clock_small"
+                        android:text="1 d"
+                        android:textColor="@color/activity1fontGray"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="92dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:src="@mipmap/loginsignup6_bg"
+                        android:layout_width="96dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/image2"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text="Introduction to UX Designs"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Presented by Tony Ramirez"
+                            android:textColor="@color/activity15fontGray"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:maxLines="2"
+                            android:text="Lorem ipsum dolor sit amet, an mei alii veri verear, an dicta veritus vix cu."
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity17_splitter_height">
+
+            <RelativeLayout
+                android:layout_weight="7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="match_parent"
+                    android:background="@color/activity17timeline" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_gravity="center_vertical"
+                android:background="@color/activity17Splitter"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/activity17timeline" />
+
+                <ImageView
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:src="@drawable/activity17_icon2"
+                    android:layout_width="@dimen/activity17_icon_size"
+                    android:layout_height="@dimen/activity17_icon_size" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textDescription5"
+                        android:layout_marginRight="8dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/timed5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="text" />
+
+                    <TextView
+                        android:id="@+id/timed5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawableLeft="@mipmap/ic_clock_small"
+                        android:drawablePadding="5dp"
+                        android:drawableStart="@mipmap/ic_clock_small"
+                        android:text="3 m"
+                        android:textColor="@color/activity1fontGray"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity17_splitter_height">
+
+            <RelativeLayout
+                android:layout_weight="7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="match_parent"
+                    android:background="@color/activity17timeline" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_gravity="center_vertical"
+                android:background="@color/activity17Splitter"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/activity17timeline" />
+
+                <ImageView
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:src="@drawable/activity17_icon1"
+                    android:layout_width="@dimen/activity17_icon_size"
+                    android:layout_height="@dimen/activity17_icon_size" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textDescription6"
+                        android:layout_marginRight="8dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/timed6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="text" />
+
+                    <TextView
+                        android:id="@+id/timed6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawableLeft="@mipmap/ic_clock_small"
+                        android:drawablePadding="5dp"
+                        android:drawableStart="@mipmap/ic_clock_small"
+                        android:text="1 m"
+                        android:textColor="@color/activity1fontGray"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity17_splitter_height">
+
+            <RelativeLayout
+                android:layout_weight="7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="match_parent"
+                    android:background="@color/activity17timeline" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_gravity="center_vertical"
+                android:background="@color/activity17Splitter"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

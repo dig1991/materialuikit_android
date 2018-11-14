@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/buttonMenu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/menuNavigation13menuBg"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <ImageView
+        android:id="@+id/iconImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp"
+        android:src="@drawable/ic_explore" />
+
+    <TextView
+        android:id="@+id/menuText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iconImage"
+        android:paddingLeft="4dp"
+        android:paddingRight="18dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        tools:text="Explore" />
+
+    <TextView
+        android:id="@+id/menuNotificationCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/menunavigation13_notification_nonactive_bg"
+        android:gravity="center_horizontal|center_vertical"
+        android:minHeight="22dp"
+        android:minWidth="22dp"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="blocksDescendants"
+    android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/leftLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/loginsignup6_bg" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageMain"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Sky Blue Dress"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="8dp"
+                    android:rating="4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/price"
+                    android:textColor="@color/ecommerce9fontGray"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_toLeftOf="@+id/price"
+                    android:textStyle="bold"
+                    android:text="$255"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/title"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="6dp"
+                    android:text="$125"
+                    android:textColor="@color/ecommerce7colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/butttonShoppingCart"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/ecommerce9colorPrimary"
+                    app:cardCornerRadius="24dp">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:src="@drawable/ic_shopping_cart_white"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/butttonLove"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/butttonShoppingCart"
+                    android:layout_marginEnd="8dp"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="24dp">
+
+                    <ImageView
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:src="@drawable/ic_love_yellow"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp" />
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</FrameLayout>

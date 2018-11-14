@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:elevation="0dp">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:paddingRight="10dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <TextView
+                    android:id="@+id/titleBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Checkbox Dark"
+                    android:textColor="@android:color/white"
+                    android:textSize="21sp" />
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/extraCheckbox2Background"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:paddingBottom="18dp"
+                        android:paddingEnd="18dp"
+                        android:paddingStart="24dp"
+                        android:paddingTop="18dp"
+                        android:text="SHOP"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/extraCheckbox1SplitterGray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="18dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Zara"
+                                android:textColor="@android:color/white"
+                                android:theme="@style/ExtraCheckbox2ShopCheckbox" />
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Armani"
+                                android:textColor="@android:color/white"
+                                android:theme="@style/ExtraCheckbox2ShopCheckbox" />
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Fred Perry"
+                                android:textColor="@android:color/white"
+                                android:theme="@style/ExtraCheckbox2ShopCheckbox" />
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Hugo Boss"
+                                android:textColor="@android:color/white"
+                                android:theme="@style/ExtraCheckbox2ShopCheckbox" />
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Channel"
+                                android:textColor="@android:color/white"
+                                android:theme="@style/ExtraCheckbox2ShopCheckbox" />
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Burbery"
+                                android:textColor="@android:color/white"
+                                android:theme="@style/ExtraCheckbox2ShopCheckbox" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Asos"
+                                android:textColor="@android:color/white"
+                                android:theme="@style/ExtraCheckbox2ShopCheckbox" />
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Armani"
+                                android:textColor="@android:color/white"
+                                android:theme="@style/ExtraCheckbox2ShopCheckbox" />
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Fred Perry"
+                                android:textColor="@android:color/white"
+                                android:theme="@style/ExtraCheckbox2ShopCheckbox" />
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Hugo Boss"
+                                android:textColor="@android:color/white"
+                                android:theme="@style/ExtraCheckbox2ShopCheckbox" />
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Channel"
+                                android:textColor="@android:color/white"
+                                android:theme="@style/ExtraCheckbox2ShopCheckbox" />
+
+                            <CheckBox
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Burbery"
+                                android:textColor="@android:color/white"
+                                android:theme="@style/ExtraCheckbox2ShopCheckbox" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:paddingBottom="18dp"
+                        android:paddingEnd="18dp"
+                        android:paddingStart="24dp"
+                        android:paddingTop="18dp"
+                        android:text="UNIVERSAL"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/extraCheckbox2SplitterGray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/activity_horizontal_margin"
+                        android:paddingEnd="18dp"
+                        android:paddingStart="18dp"
+                        android:paddingTop="@dimen/activity_horizontal_margin">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:layout_margin="@dimen/activity_ahalf_horizontal_margin"
+                            android:layout_weight="1"
+                            android:background="@drawable/extra_checkbox_universal_bg1">
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:theme="@style/ExtraCheckbox2UniversalCheckbox" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:layout_margin="@dimen/activity_ahalf_horizontal_margin"
+                            android:layout_weight="1"
+                            android:background="@drawable/extra_checkbox_multimedia_bg">
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:theme="@style/ExtraCheckbox2UniversalCheckbox" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:layout_margin="@dimen/activity_ahalf_horizontal_margin"
+                            android:layout_weight="1"
+                            android:background="@drawable/extra_checkbox_universal_bg2">
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:theme="@style/ExtraCheckbox2ShopCheckbox" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:paddingBottom="18dp"
+                        android:paddingEnd="18dp"
+                        android:paddingStart="24dp"
+                        android:paddingTop="18dp"
+                        android:text="MULTIMEDIA"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/extraCheckbox2SplitterGray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="18dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerView"
+                            style="@style/ExtraCheckbox2ScrollbarStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header_loginsignup" />
+
+</android.support.v4.widget.DrawerLayout>

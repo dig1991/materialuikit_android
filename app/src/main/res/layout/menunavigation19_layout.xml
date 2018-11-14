@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/SlidingPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="@color/menuNavigation14menuBg"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/profilContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="0dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <com.mediatechindo.wahyu.materialuikit.tools.RoundedImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:src="@drawable/profiile_pic" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:text="James Richardson"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_place"
+                        android:gravity="center_vertical"
+                        android:text="San Fransisco, CA" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <ListView
+            android:id="@+id/menuList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/counterContainer"
+            android:layout_centerVertical="true"
+            android:divider="@null" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="34dp"
+            android:layout_marginTop="64dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/buttonSetting"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="onClick"
+                android:src="@drawable/ic_setting_black" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/buttonProfile"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:onClick="onClick"
+                app:cardBackgroundColor="@color/menuNavigation15menuProfileBg"
+                app:cardCornerRadius="28dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:src="@drawable/ic_profile" />
+
+            </android.support.v7.widget.CardView>
+
+            <ImageButton
+                android:id="@+id/buttonLogout"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="onClick"
+                android:src="@drawable/ic_logout_red" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:elevation="0dp">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize">
+
+            <include layout="@layout/dummy_content"/>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.v4.widget.SlidingPaneLayout>

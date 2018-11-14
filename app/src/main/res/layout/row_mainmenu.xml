@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/buttonMenu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_menu_bg"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:id="@+id/menuText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:padding="18dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        tools:text="Explore" />
+
+    <TextView
+        android:id="@+id/menuNotificationCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:minHeight="22dp"
+        android:minWidth="22dp"
+        android:text="20"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

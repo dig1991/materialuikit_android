@@ -1,0 +1,87 @@
+package com.mediatechindo.wahyu.materialuikit.template.GalleryCategory.Style12;
+
+import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
+
+import com.bumptech.glide.DrawableRequestBuilder;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.drawable.GlideDrawable;
+import com.bumptech.glide.request.animation.GlideAnimation;
+import com.bumptech.glide.request.target.SimpleTarget;
+import com.mediatechindo.wahyu.materialuikit.BuildConfig;
+import com.mediatechindo.wahyu.materialuikit.R;
+
+public class GalleryStyle12Activity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.gallery12_layout);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setDisplayShowTitleEnabled(false);
+        }
+
+        View bg = findViewById(R.id.activity_gallery_style12);
+        String url = BuildConfig.IMAGE_URL + "gallery/style-12/Gallery-12-img-1.png";
+        String urlThumb = BuildConfig.IMAGE_URL + "gallery/style-12/Gallery-12-img-1-thumb.png";
+        loadImageRequest(bg, url, urlThumb);
+
+    }
+
+    private void loadImageRequest(final View bg, String url, String urlThumb) {
+        DrawableRequestBuilder<String> thumbnailRequest = Glide
+                .with(this)
+                .load(urlThumb);
+
+        Glide.with(this)
+                .load(url)
+                .crossFade()
+                .thumbnail(thumbnailRequest)
+                .into(new SimpleTarget<GlideDrawable>() {
+                    @Override
+                    public void onResourceReady(GlideDrawable resource, GlideAnimation<? super GlideDrawable> glideAnimation) {
+                        bg.setBackground(resource);
+                    }
+                });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.gallery12_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                break;
+            case R.id.action_share:
+                Toast.makeText(this, "action share clicked!", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.action_edit:
+                Toast.makeText(this, "action edit clicked!", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.action_delete:
+                Toast.makeText(this, "action delete clicked!", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.action_settings:
+                Toast.makeText(this, "action setting clicked!", Toast.LENGTH_SHORT).show();
+                break;
+            default:
+                break;
+        }
+        return true;
+    }
+
+}

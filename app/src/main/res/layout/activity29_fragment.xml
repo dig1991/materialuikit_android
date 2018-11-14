@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/menuContainer"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_above="@+id/inputContainer"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="@dimen/activity29_buttonwidth"
+                    android:layout_height="@dimen/activity29_buttonwidth"
+                    android:layout_gravity="center_horizontal"
+                    app:cardBackgroundColor="@color/menuNavigation1Button1Bg"
+                    app:cardCornerRadius="@dimen/activity29_buttonradius">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:src="@drawable/ic_camera" />
+
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="Photos"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="@dimen/activity29_buttonwidth"
+                    android:layout_height="@dimen/activity29_buttonwidth"
+                    android:layout_gravity="center_horizontal"
+                    app:cardBackgroundColor="@color/menuNavigation1Button2Bg"
+                    app:cardCornerRadius="@dimen/activity29_buttonradius">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:src="@drawable/ic_video" />
+
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="Videos"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="@dimen/activity29_buttonwidth"
+                    android:layout_height="@dimen/activity29_buttonwidth"
+                    android:layout_gravity="center_horizontal"
+                    app:cardBackgroundColor="@color/menuNavigation1Button3Bg"
+                    app:cardCornerRadius="@dimen/activity29_buttonradius">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:src="@drawable/ic_document" />
+
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="Document"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="@dimen/activity29_buttonwidth"
+                    android:layout_height="@dimen/activity29_buttonwidth"
+                    android:layout_gravity="center_horizontal"
+                    app:cardBackgroundColor="@color/menuNavigation1Button4Bg"
+                    app:cardCornerRadius="@dimen/activity29_buttonradius">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:src="@drawable/ic_location" />
+
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="Place"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="@dimen/activity29_buttonwidth"
+                    android:layout_height="@dimen/activity29_buttonwidth"
+                    android:layout_gravity="center_horizontal"
+                    app:cardBackgroundColor="@color/menuNavigation1Button5Bg"
+                    app:cardCornerRadius="@dimen/activity29_buttonradius">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:src="@drawable/ic_contact" />
+
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="Contact"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="@dimen/activity29_buttonwidth"
+                    android:layout_height="@dimen/activity29_buttonwidth"
+                    android:layout_gravity="center_horizontal"
+                    app:cardBackgroundColor="@color/menuNavigation1Button6Bg"
+                    app:cardCornerRadius="@dimen/activity29_buttonradius">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:src="@drawable/ic_audio" />
+
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="Audio"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/activity29Splitter" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

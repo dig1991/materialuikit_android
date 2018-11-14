@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            style="@style/LoginSignUp5Input"
+            android:hint="Fullname" />
+
+        <EditText
+            style="@style/LoginSignUp5Input"
+            android:hint="Username" />
+
+        <EditText
+            style="@style/LoginSignUp5Input"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            style="@style/LoginSignUp5Input"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            style="@style/LoginSignUp5Input"
+            android:hint="Confirm Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnCreateAccount"
+            style="@style/ButtonOrange"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="30dp"
+            android:onClick="onClick"
+            android:text="Create An Account"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnSignFacebook"
+            style="@style/ButtonBlue"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:onClick="onClick"
+            android:text="Sign Up with Facebook"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

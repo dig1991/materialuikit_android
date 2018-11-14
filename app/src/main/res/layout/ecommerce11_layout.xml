@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ecommerce11background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonContainer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="8dp"
+                            android:paddingStart="16dp"
+                            android:paddingTop="8dp"
+                            android:text="Black Faux Leather Dress"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:padding="8dp"
+                            android:text="$225"
+                            android:textColor="@color/ecommerce10colorPrimary"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="220dp"
+                        android:animateLayoutChanges="true"
+                        android:background="@color/ecommerce11DescriptionBg"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/descriptionTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:padding="8dp"
+                                android:text="DESCRIPTION"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/buttonMore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:src="@drawable/ic_expand_more" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/ecommerce11SplitterGray" />
+
+                        <TextView
+                            android:id="@+id/description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="3"
+                            android:padding="8dp"
+                            android:text="@string/lorem_ipsum" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:padding="8dp"
+                        android:text="SIZE"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/ecommerce11SplitterGray" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="18dp">
+
+                        <TextView
+                            android:id="@+id/button1"
+                            style="@style/Ecommerce11ButtonStyle"
+                            android:onClick="onClick"
+                            android:text="XS" />
+
+                        <TextView
+                            android:id="@+id/button2"
+                            style="@style/Ecommerce11ButtonStyle"
+                            android:onClick="onClick"
+                            android:text="S" />
+
+                        <TextView
+                            android:id="@+id/button3"
+                            style="@style/Ecommerce11ButtonStyle"
+                            android:background="@drawable/ecommerce11_selected_bg"
+                            android:onClick="onClick"
+                            android:text="M"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/button4"
+                            style="@style/Ecommerce11ButtonStyle"
+                            android:onClick="onClick"
+                            android:text="L" />
+
+                        <TextView
+                            android:id="@+id/button5"
+                            style="@style/Ecommerce11ButtonStyle"
+                            android:onClick="onClick"
+                            android:text="XL" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <Button
+            android:id="@+id/btnAddToWishlist"
+            style="@style/ButtonWhite"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Add to Wishlist" />
+
+        <RelativeLayout
+            android:id="@+id/btnAddToChart"
+            style="@style/ButtonYellow"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:onClick="onClick">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:drawableLeft="@drawable/ic_shopping_cart_white"
+                android:text="Add to Cart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

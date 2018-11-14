@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/SlidingPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="@color/menuNavigation5menuBg"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/search"
+            style="@style/MenuNavigation2Input"
+            android:layout_alignParentTop="true"
+            android:layout_margin="12dp"
+            android:drawableRight="@drawable/ic_search_grey"
+            android:elevation="3dp"
+            android:hint="Search" />
+
+        <RelativeLayout
+            android:id="@+id/profilContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search">
+
+            <com.mediatechindo.wahyu.materialuikit.tools.RoundedImageView
+                android:id="@+id/imageView"
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="28dp"
+                android:src="@drawable/profiile_pic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/imageView"
+                android:layout_alignTop="@+id/imageView"
+                android:layout_margin="3dp"
+                android:background="@drawable/menunavigation12_notification_profile_bg"
+                android:paddingBottom="2dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="2dp"
+                android:text=" 2 "
+                android:textColor="@android:color/white"
+                android:textSize="11sp" />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/menuList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonLogout"
+            android:layout_below="@+id/profilContainer"
+            android:layout_centerVertical="true"
+            android:divider="@null" />
+
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/menuNavigation12menuLogoutBg"
+            android:onClick="onClick"
+            android:text="Logout"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:elevation="0dp">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize">
+
+            <include layout="@layout/dummy_content"/>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.v4.widget.SlidingPaneLayout>

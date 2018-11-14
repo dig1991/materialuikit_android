@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_walkthrough_style15"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/walkthrough15Background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="42dp"
+        android:text="Making friends is easy as waving your hand back and forth with ease."
+        android:textColor="@color/walkthrough15FontGray"
+        android:textSize="12sp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="42dp"
+        android:layout_marginTop="74dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textSkip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="center_horizontal|center_vertical"
+            android:onClick="onClick"
+            android:text="SKIP"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:animateLayoutChanges="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/indicator1"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/ic_dot_grey" />
+
+            <View
+                android:id="@+id/indicator2"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/ic_dot_grey" />
+
+            <View
+                android:id="@+id/indicator3"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/ic_dot_grey" />
+
+            <View
+                android:id="@+id/indicator4"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/ic_dot_grey" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="center_horizontal|center_vertical"
+            android:onClick="onClick"
+            android:text="SIGN IN"
+            android:textColor="@color/walkthrough15colorPrimary"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</FrameLayout>

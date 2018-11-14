@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/SlidingPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="@color/menuNavigation2menuBg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <EditText
+            style="@style/MenuNavigation2Input"
+            android:drawableRight="@drawable/ic_search_grey"
+            android:elevation="3dp"
+            android:hint="Search" />
+
+        <LinearLayout
+            android:id="@+id/menuContainer"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/MenuNavigation2ButtonMenu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:onClick="onClick"
+                android:text="Profile"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/MenuNavigation2ButtonMenu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="onClick"
+                android:text="Notifications"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/MenuNavigation2ButtonMenu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="onClick"
+                android:text="Settings"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/MenuNavigation2ButtonMenu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="onClick"
+                android:text="Feed"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/MenuNavigation2ButtonMenu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="onClick"
+                android:text="Photos"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/MenuNavigation2ButtonMenu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="onClick"
+                android:text="Videos"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button7"
+                style="@style/MenuNavigation2ButtonMenu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="onClick"
+                android:text="Logout"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:elevation="0dp">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize">
+
+            <include layout="@layout/dummy_content"/>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.v4.widget.SlidingPaneLayout>

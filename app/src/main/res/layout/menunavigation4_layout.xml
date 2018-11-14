@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize">
+
+            <include layout="@layout/dummy_content"/>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:background="@color/menuNavigation4menuBg"
+        app:itemTextColor="@android:color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/menuContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="74dp">
+
+                <Button
+                    android:id="@+id/navmain_profile"
+                    style="@style/MenuNavigation4ButtonMenu"
+                    android:layout_marginTop="32dp"
+                    android:drawableLeft="@drawable/ic_profile"
+                    android:onClick="onClick"
+                    android:text="Profile" />
+
+                <Button
+                    android:id="@+id/navmain_messages"
+                    style="@style/MenuNavigation4ButtonMenu"
+                    android:drawableLeft="@drawable/ic_messages"
+                    android:onClick="onClick"
+                    android:text="Messages" />
+
+                <Button
+                    android:id="@+id/navmain_settings"
+                    style="@style/MenuNavigation4ButtonMenu"
+                    android:drawableLeft="@drawable/ic_setting"
+                    android:onClick="onClick"
+                    android:text="Settings" />
+
+                <Button
+                    android:id="@+id/navmain_group"
+                    style="@style/MenuNavigation4ButtonMenu"
+                    android:drawableLeft="@drawable/ic_group"
+                    android:onClick="onClick"
+                    android:text="Group" />
+
+                <Button
+                    android:id="@+id/navmain_photos"
+                    style="@style/MenuNavigation4ButtonMenu"
+                    android:drawableLeft="@drawable/ic_photos"
+                    android:onClick="onClick"
+                    android:text="Photos" />
+
+                <Button
+                    android:id="@+id/navmain_videos"
+                    style="@style/MenuNavigation4ButtonMenu"
+                    android:drawableLeft="@drawable/ic_videos"
+                    android:onClick="onClick"
+                    android:text="Videos" />
+
+                <Button
+                    android:id="@+id/navmain_logout"
+                    style="@style/MenuNavigation4ButtonMenu"
+                    android:drawableLeft="@drawable/ic_logout"
+                    android:onClick="onClick"
+                    android:text="Logout" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

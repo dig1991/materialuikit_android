@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login_style20"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/profile7background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:elevation="5dp"
+            android:paddingTop="35dp"
+            android:paddingBottom="20dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="440dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                app:cardBackgroundColor="@color/loginSignup10CardGray">
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingTop="65dp"
+            android:elevation="10dp"
+            android:paddingBottom="0dp" />
+
+    </RelativeLayout>
+
+</ScrollView>

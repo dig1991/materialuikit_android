@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginsignup3_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <EditText
+                style="@style/LoginSignUp3Input"
+                android:hint="Fullname" />
+
+            <EditText
+                style="@style/LoginSignUp3Input"
+                android:hint="Username" />
+
+            <EditText
+                style="@style/LoginSignUp3Input"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                style="@style/LoginSignUp3Input"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <EditText
+                style="@style/LoginSignUp3Input"
+                android:hint="Confirm Password"
+                android:inputType="textPassword" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already have account? "
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/txtSignin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:text="Sign In"
+                    android:textColor="@color/loginSignup3colorPrimary"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnCreateAccount"
+        style="@style/ButtonOrange"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:onClick="onClick"
+        android:text="Create An Account"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

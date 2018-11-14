@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Welcome!"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="42dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_marginTop="84dp"
+        android:layout_marginBottom="102dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="114dp"
+        android:animateLayoutChanges="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/indicator1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/ic_dot_grey" />
+
+        <View
+            android:id="@+id/indicator2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/ic_dot_grey" />
+
+        <View
+            android:id="@+id/indicator3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/ic_dot_grey" />
+
+        <View
+            android:id="@+id/indicator4"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/ic_dot_grey" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGetStarted"
+        style="@style/ButtonMagenta"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_gravity="bottom"
+        android:onClick="onClick"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="GET STARTED"
+        android:textColor="@android:color/white" />
+
+</FrameLayout>

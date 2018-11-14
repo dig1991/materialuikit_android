@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/infoAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/songArt"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Mouthful of Wasps"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toTopOf="@+id/albumCount"
+            app:layout_constraintLeft_toRightOf="@+id/songArt"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/albumCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Kashmir"
+            android:textColor="@color/music5fontGray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/songArt"
+            app:layout_constraintTop_toBottomOf="@+id/artist" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

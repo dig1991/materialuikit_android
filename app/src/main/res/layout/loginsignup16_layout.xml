@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginsignup16_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="?attr/actionBarSize">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_marginTop="106dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageContainer">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:elevation="0dp">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tab_layout_loginsignup16"
+                    style="@style/LoginSignUp16TabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    app:tabMode="fixed" />
+
+            </android.support.design.widget.AppBarLayout>
+
+            <com.mediatechindo.wahyu.materialuikit.tools.CustomViewPager
+                android:id="@+id/viewpager_loginsignup16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:background="@color/loginSignup6ContainerBg" />
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

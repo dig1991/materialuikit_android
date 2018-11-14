@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mediatechindo.wahyu.materialuikit">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_uikit_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".template.LoginSignupCategory.Style1.LoginSignupStyle1Activity"
+            android:theme="@style/LoginSignUp1Theme" />
+        <activity
+            android:name=".template.LoginSignupCategory.Style2.LoginSignupStyle2Activity"
+            android:theme="@style/LoginSignUp2Theme" />
+        <activity
+            android:name=".template.LoginSignupCategory.Style3.LoginSignupStyle3Activity"
+            android:theme="@style/LoginSignUp3Theme" />
+        <activity
+            android:name=".template.LoginSignupCategory.Style4.LoginSignupStyle4Activity"
+            android:theme="@style/LoginSignUp4Theme" />
+        <activity
+            android:name=".template.LoginSignupCategory.Style5.LoginSignupStyle5Activity"
+            android:theme="@style/LoginSignUp5Theme" />
+        <activity
+            android:name=".template.LoginSignupCategory.Style6.LoginSignupStyle6Activity"
+            android:theme="@style/LoginSignUp6Theme" />
+        <activity
+            android:name=".template.LoginSignupCategory.Style7.LoginSignupStyle7Activity"
+            android:theme="@style/LoginSignUp7Theme" />
+        <activity
+            android:name=".template.LoginSignupCategory.Style8.LoginSignupStyle8Activity"
+            android:theme="@style/LoginSignUp8Theme" />
+        <activity
+            android:name=".template.LoginSignupCategory.Style9.LoginSignupStyle9Activity"
+            android:theme="@style/LoginSignUp9Theme" />
+        <activity
+            android:name=".template.LoginSignupCategory.Style10.LoginSignupStyle10Activity"
+            android:theme="@style/LoginSignUp10Theme" />
+        <activity
+            android:name=".template.LoginSignupCategory.Style11.LoginSignupStyle11Activity"
+            android:theme="@style/LoginSignUp11Theme" />
+        <activity
+            android:name=".template.LoginSignupCategory.Style12.LoginSignupStyle12Activity"
+            android:theme="@style/LoginSignUp12Theme" />
+        <activity
+            android:name=".template.LoginSignupCategory.Style13.LoginSignupStyle13Activity"
+            android:theme="@style/LoginSignUp13Theme" />
+        <activity
+            android:name=".template.LoginSignupCategory.Style14.LoginSignupStyle14Activity"
+            android:theme="@style/LoginSignUp14Theme" />
+        <activity
+            android:name=".template.LoginSignupCategory.Style15.LoginSignupStyle15Activity"
+            android:theme="@style/LoginSignUp15Theme" />
+        <activity
+            android:name=".template.LoginSignupCategory.Style16.LoginSignupStyle16Activity"
+            android:theme="@style/LoginSignUp16Theme" />
+        <activity
+            android:name=".template.LoginSignupCategory.Style17.LoginSignupStyle17Activity"
+            android:theme="@style/LoginSignUp17Theme" />
+        <activity
+            android:name=".template.LoginSignupCategory.Style18.LoginSignupStyle18Activity"
+            android:theme="@style/LoginSignUp18Theme" />
+        <activity
+            android:name=".template.LoginSignupCategory.Style19.LoginSignupStyle19Activity"
+            android:theme="@style/LoginSignUp19Theme" />
+        <activity
+            android:name=".template.LoginSignupCategory.Style20.LoginSignupStyle20Activity"
+            android:theme="@style/LoginSignUp20Theme" />
+        <activity
+            android:name=".template.LoginSignupCategory.Style21.LoginSignupStyle21Activity"
+            android:theme="@style/LoginSignUp21Theme" />
+        <activity
+            android:name=".template.LoginSignupCategory.Style22.LoginSignupStyle22Activity"
+            android:theme="@style/LoginSignUp22Theme" />
+        <activity
+            android:name=".template.LoginSignupCategory.Style23.LoginSignupStyle23Activity"
+            android:theme="@style/LoginSignUp23Theme" />
+        <activity
+            android:name=".template.LoginSignupCategory.Style24.LoginSignupStyle24Activity"
+            android:theme="@style/LoginSignUp24Theme" />
+        <activity
+            android:name=".template.LoginSignupCategory.Style25.LoginSignupStyle25Activity"
+            android:theme="@style/LoginSignUp25Theme" />
+        <activity
+            android:name=".template.MenuCategory.Style1.MenuNavigation1Activity"
+            android:theme="@style/MenuNavigation1Theme" />
+        <activity
+            android:name=".template.MenuCategory.Style2.MenuNavigation2Activity"
+            android:theme="@style/MenuNavigation2Theme" />
+        <activity
+            android:name=".template.MenuCategory.Style3.MenuNavigation3Activity"
+            android:theme="@style/MenuNavigation3Theme" />
+        <activity
+            android:name=".template.MenuCategory.Style4.MenuNavigation4Activity"
+            android:theme="@style/MenuNavigation4Theme" />
+        <activity
+            android:name=".template.MenuCategory.Style5.MenuNavigation5Activity"
+            android:theme="@style/MenuNavigation5Theme" />
+        <activity
+            android:name=".template.MenuCategory.Style6.MenuNavigation6Activity"
+            android:theme="@style/MenuNavigation6Theme" />
+        <activity
+            android:name=".template.MenuCategory.Style7.MenuNavigation7Activity"
+            android:theme="@style/MenuNavigation7Theme" />
+        <activity
+            android:name=".template.MenuCategory.Style8.MenuNavigation8Activity"
+            android:theme="@style/MenuNavigation8Theme" />
+        <activity
+            android:name=".template.MenuCategory.Style9.MenuNavigation9Activity"
+            android:theme="@style/MenuNavigation9Theme" />
+        <activity
+            android:name=".template.MenuCategory.Style10.MenuNavigation10Activity"
+            android:theme="@style/MenuNavigation10Theme" />
+        <activity
+            android:name=".template.MenuCategory.Style11.MenuNavigation11Activity"
+            android:theme="@style/MenuNavigation11Theme" />
+        <activity
+            android:name=".template.MenuCategory.Style12.MenuNavigation12Activity"
+            android:theme="@style/MenuNavigation12Theme" />
+        <activity
+            android:name=".template.MenuCategory.Style13.MenuNavigation13Activity"
+            android:theme="@style/MenuNavigation13Theme" />
+        <activity
+            android:name=".template.MenuCategory.Style14.MenuNavigation14Activity"
+            android:theme="@style/MenuNavigation14Theme" />
+        <activity
+            android:name=".template.MenuCategory.Style15.MenuNavigation15Activity"
+            android:theme="@style/MenuNavigation15Theme" />
+        <activity
+            android:name=".template.MenuCategory.Style16.MenuNavigation16Activity"
+            android:theme="@style/MenuNavigation16Theme" />
+        <activity
+            android:name=".template.MenuCategory.Style17.MenuNavigation17Activity"
+            android:theme="@style/MenuNavigation17Theme" />
+        <activity
+            android:name=".template.MenuCategory.Style18.MenuNavigation18Activity"
+            android:theme="@style/MenuNavigation18Theme" />
+        <activity
+            android:name=".template.MenuCategory.Style19.MenuNavigation19Activity"
+            android:theme="@style/MenuNavigation19Theme" />
+        <activity
+            android:name=".template.MenuCategory.Style20.MenuNavigation20Activity"
+            android:theme="@style/MenuNavigation20Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style1.ProfileStyle1Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile1Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style2.ProfileStyle2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile2Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style3.ProfileStyle3Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile3Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style4.ProfileStyle4Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile4Theme" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".template.ProfileCategory.Style5.ProfileStyle5Activity"
+            android:label="@string/title_activity_profile_style5"
+            android:theme="@style/Profile5Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style6.ProfileStyle6Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile6Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style7.ProfileStyle7Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile7Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style8.ProfileStyle8Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile8Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style9.ProfileStyle9Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile9Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style10.ProfileStyle10Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile10Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style11.ProfileStyle11Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile11Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style12.ProfileStyle12Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile12Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style13.ProfileStyle13Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile13Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style14.ProfileStyle14Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile14Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style15.ProfileStyle15Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile15Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style16.ProfileStyle16Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile16Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style17.ProfileStyle17Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile17Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style18.ProfileStyle18Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile18Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style19.ProfileStyle19Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile19Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style20.ProfileStyle20Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile20Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style21.ProfileStyle21Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile21Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style22.ProfileStyle22Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile22Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style23.ProfileStyle23Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile23Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style24.ProfileStyle24Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile24Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style25.ProfileStyle25Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile25Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style26.ProfileStyle26Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile26Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style27.ProfileStyle27Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile27Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style28.ProfileStyle28Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile28Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style29.ProfileStyle29Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile29Theme" />
+        <activity
+            android:name=".template.ProfileCategory.Style30.ProfileStyle30Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Profile30Theme" />
+        <activity
+            android:name=".template.WalktroughCategory.Style1.WalkthroughStyle1Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Walkthrough1Theme" />
+        <activity
+            android:name=".template.WalktroughCategory.Style2.WalkthroughStyle2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Walkthrough2Theme" />
+        <activity
+            android:name=".template.WalktroughCategory.Style3.WalkthroughStyle3Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Walkthrough3Theme" />
+        <activity
+            android:name=".template.WalktroughCategory.Style4.WalkthroughStyle4Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Walkthrough4Theme" />
+        <activity
+            android:name=".template.WalktroughCategory.Style5.WalkthroughStyle5Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Walkthrough5Theme" />
+        <activity
+            android:name=".template.WalktroughCategory.Style6.WalkthroughStyle6Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Walkthrough6Theme" />
+        <activity
+            android:name=".template.WalktroughCategory.Style7.WalkthroughStyle7Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Walkthrough7Theme" />
+        <activity
+            android:name=".template.WalktroughCategory.Style8.WalkthroughStyle8Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Walkthrough8Theme" />
+        <activity
+            android:name=".template.WalktroughCategory.Style9.WalkthroughStyle9Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Walkthrough9Theme" />
+        <activity
+            android:name=".template.WalktroughCategory.Style10.WalkthroughStyle10Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Walkthrough10Theme" />
+        <activity
+            android:name=".template.WalktroughCategory.Style11.WalkthroughStyle11Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Walkthrough11Theme" />
+        <activity
+            android:name=".template.WalktroughCategory.Style12.WalkthroughStyle12Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Walkthrough12Theme" />
+        <activity
+            android:name=".template.WalktroughCategory.Style13.WalkthroughStyle13Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Walkthrough13Theme" />
+        <activity
+            android:name=".template.WalktroughCategory.Style14.WalkthroughStyle14Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Walkthrough14Theme" />
+        <activity
+            android:name=".template.WalktroughCategory.Style15.WalkthroughStyle15Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Walkthrough15Theme" />
+        <activity
+            android:name=".template.WalktroughCategory.Style16.WalkthroughStyle16Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Walkthrough16Theme" />
+        <activity
+            android:name=".template.WalktroughCategory.Style17.WalkthroughStyle17Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Walkthrough17Theme" />
+        <activity
+            android:name=".template.WalktroughCategory.Style18.WalkthroughStyle18Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Walkthrough18Theme" />
+        <activity
+            android:name=".template.WalktroughCategory.Style19.WalkthroughStyle19Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Walkthrough19Theme" />
+        <activity
+            android:name=".template.WalktroughCategory.Style20.WalkthroughStyle20Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Walkthrough20Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style1.ActivityStyle1Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity1Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style2.ActivityStyle2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity2Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style3.ActivityStyle3Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity3Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style4.ActivityStyle4Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity4Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style5.ActivityStyle5Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity5Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style6.ActivityStyle6Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity6Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style7.ActivityStyle7Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity7Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style8.ActivityStyle8Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity8Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style9.ActivityStyle9Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity9Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style10.ActivityStyle10Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity10Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style11.ActivityStyle11Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity11Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style12.ActivityStyle12Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity12Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style13.ActivityStyle13Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity13Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style14.ActivityStyle14Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity14Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style15.ActivityStyle15Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity15Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style16.ActivityStyle16Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity16Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style17.ActivityStyle17Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity17Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style18.ActivityStyle18Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity18Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style19.ActivityStyle19Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity19Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style20.ActivityStyle20Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity20Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style21.ActivityStyle21Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity21Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style22.ActivityStyle22Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity22Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style23.ActivityStyle23Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity23Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style24.ActivityStyle24Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity24Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style25.ActivityStyle25Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity25Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style26.ActivityStyle26Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity26Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style27.ActivityStyle27Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity27Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style28.ActivityStyle28Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity28Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style29.ActivityStyle29Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity29Theme" />
+        <activity
+            android:name=".template.ActivityCategory.Style30.ActivityStyle30Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity30Theme" />
+        <activity
+            android:name=".template.GalleryCategory.Style1.GalleryStyle1Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Gallery1Theme" />
+        <activity
+            android:name=".template.GalleryCategory.Style2.GalleryStyle2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Gallery2Theme" />
+        <activity
+            android:name=".template.GalleryCategory.Style3.GalleryStyle3Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Gallery3Theme" />
+        <activity
+            android:name=".template.GalleryCategory.Style4.GalleryStyle4Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Gallery4Theme" />
+        <activity
+            android:name=".template.GalleryCategory.Style5.GalleryStyle5Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Gallery5Theme" />
+        <activity
+            android:name=".template.GalleryCategory.Style6.GalleryStyle6Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Gallery6Theme" />
+        <activity
+            android:name=".template.GalleryCategory.Style7.GalleryStyle7Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Gallery7Theme" />
+        <activity
+            android:name=".template.GalleryCategory.Style8.GalleryStyle8Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Gallery8Theme" />
+        <activity
+            android:name=".template.GalleryCategory.Style9.GalleryStyle9Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Gallery9Theme" />
+        <activity
+            android:name=".template.GalleryCategory.Style10.GalleryStyle10Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Gallery10Theme" />
+        <activity
+            android:name=".template.GalleryCategory.Style11.GalleryStyle11Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Gallery11Theme" />
+        <activity
+            android:name=".template.GalleryCategory.Style12.GalleryStyle12Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Gallery12Theme" />
+        <activity
+            android:name=".template.GalleryCategory.Style13.GalleryStyle13Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Gallery13Theme" />
+        <activity
+            android:name=".template.GalleryCategory.Style14.GalleryStyle14Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Gallery14Theme" />
+        <activity
+            android:name=".template.GalleryCategory.Style15.GalleryStyle15Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Gallery15Theme" />
+        <activity
+            android:name=".template.GalleryCategory.Style16.GalleryStyle16Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Gallery16Theme" />
+        <activity
+            android:name=".template.GalleryCategory.Style17.GalleryStyle17Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Gallery17Theme" />
+        <activity
+            android:name=".template.GalleryCategory.Style18.GalleryStyle18Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Gallery18Theme" />
+        <activity
+            android:name=".template.GalleryCategory.Style19.GalleryStyle19Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Gallery19Theme" />
+        <activity
+            android:name=".template.GalleryCategory.Style20.GalleryStyle20Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Gallery20Theme" />
+        <activity
+            android:name=".template.GalleryCategory.Style21.GalleryStyle21Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Gallery21Theme" />
+        <activity
+            android:name=".template.GalleryCategory.Style22.GalleryStyle22Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Gallery22Theme" />
+        <activity
+            android:name=".template.GalleryCategory.Style23.GalleryStyle23Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Gallery23Theme" />
+        <activity
+            android:name=".template.GalleryCategory.Style24.GalleryStyle24Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Gallery24Theme" />
+        <activity
+            android:name=".template.GalleryCategory.Style25.GalleryStyle25Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Gallery25Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style1.EcommerceStyle1Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce1Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style2.EcommerceStyle2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce2Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style3.EcommerceStyle3Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce3Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style4.EcommerceStyle4Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce4Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style5.EcommerceStyle5Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce5Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style6.EcommerceStyle6Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce6Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style7.EcommerceStyle7Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce7Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style8.EcommerceStyle8Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce8Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style9.EcommerceStyle9Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce9Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style10.EcommerceStyle10Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce10Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style11.EcommerceStyle11Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce11Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style12.EcommerceStyle12Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce12Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style13.EcommerceStyle13Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce13Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style14.EcommerceStyle14Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce14Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style15.EcommerceStyle15Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce15Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style16.EcommerceStyle16Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce16Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style17.EcommerceStyle17Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce17Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style18.EcommerceStyle18Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce18Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style19.EcommerceStyle19Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce19Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style20.EcommerceStyle20Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce20Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style21.EcommerceStyle21Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce21Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style22.EcommerceStyle22Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce22Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style23.EcommerceStyle23Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce23Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style24.EcommerceStyle24Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce24Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style25.EcommerceStyle25Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce25Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style26.EcommerceStyle26Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce26Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style27.EcommerceStyle27Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce27Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style28.EcommerceStyle28Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce28Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style29.EcommerceStyle29Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce29Theme" />
+        <activity
+            android:name=".template.EcommerceCategory.Style30.EcommerceStyle30Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Ecommerce30Theme" />
+        <activity
+            android:name=".template.ExtraDesignCategory.ModalDialog1.ExtraDialog1Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ExtraDialog1Theme" />
+        <activity
+            android:name=".template.ExtraDesignCategory.ModalDialog2.ExtraDialog2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ExtraDialog2Theme" />
+        <activity
+            android:name=".template.ExtraDesignCategory.ModalDialog3.ExtraDialog3Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ExtraDialog3Theme" />
+        <activity
+            android:name=".template.ExtraDesignCategory.LeftMenuLight.ExtraLeftMenuLightActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ExtraLeftMenu1Theme" />
+        <activity
+            android:name=".template.ExtraDesignCategory.LeftMenuIcons.ExtraLeftMenuIconsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ExtraLeftMenu2Theme" />
+        <activity
+            android:name=".template.ExtraDesignCategory.LeftMenuDark.ExtraLeftMenuDarkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ExtraLeftMenu3Theme" />
+        <activity
+            android:name=".template.ExtraDesignCategory.LeftMenuSocial.ExtraLeftMenuSocialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ExtraLeftMenu4Theme" />
+        <activity
+            android:name=".template.ExtraDesignCategory.CheckboxLight.ExtraCheckboxLightActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ExtraCheckbox1Theme" />
+        <activity
+            android:name=".template.ExtraDesignCategory.CheckboxDark.ExtraCheckboxDarkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ExtraCheckbox2Theme" />
+        <activity
+            android:name=".template.ExtraDesignCategory.TextLight.ExtraTextLightActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ExtraTextLightTheme" />
+        <activity
+            android:name=".template.ExtraDesignCategory.TextDark.ExtraTextDarkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ExtraTextDarkTheme" />
+        <activity
+            android:name=".template.ExtraDesignCategory.Search1.ExtraSearch1Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ExtraSearch1Theme" />
+        <activity
+            android:name=".template.ExtraDesignCategory.Search2.ExtraSearch2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ExtraSearch2Theme" />
+        <activity
+            android:name=".template.ExtraDesignCategory.Search3.ExtraSearch3Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ExtraSearch3Theme" />
+        <activity
+            android:name=".template.MusicCategory.Style1.MusicStyle1Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Music1Theme" />
+        <activity
+            android:name=".template.MusicCategory.Style2.MusicStyle2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Music2Theme" />
+        <activity
+            android:name=".template.MusicCategory.Style3.MusicStyle3Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Music3Theme" />
+        <activity
+            android:name=".template.MusicCategory.Style4.MusicStyle4Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Music4Theme" />
+        <activity
+            android:name=".template.MusicCategory.Style5.MusicStyle5Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Music5Theme" />
+        <activity
+            android:name=".template.MusicCategory.Style6.MusicStyle6Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Music6Theme" />
+        <activity
+            android:name=".template.MusicCategory.Style7.MusicStyle7Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Music7Theme" />
+        <activity
+            android:name=".template.MusicCategory.Style8.MusicStyle8Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Music8Theme" />
+        <activity
+            android:name=".template.MusicCategory.Style9.MusicStyle9Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Music9Theme" />
+        <activity
+            android:name=".template.MusicCategory.Style10.MusicStyle10Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Music10Theme" />
+        <activity
+            android:name=".template.MusicCategory.Style11.MusicStyle11Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Music11Theme" />
+        <activity
+            android:name=".template.MusicCategory.Style12.MusicStyle12Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Music12Theme" />
+        <activity
+            android:name=".template.MusicCategory.Style13.MusicStyle13Activity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Music13Theme" />
+        <activity
+            android:name=".template.MusicCategory.Style14.MusicStyle14Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Music15Theme" />
+        <activity
+            android:name=".template.NewsCategory.Style1.NewsStyle1Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/News1Theme" />
+        <activity
+            android:name=".template.NewsCategory.Style2.NewsStyle2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/News2Theme" />
+        <activity
+            android:name=".template.NewsCategory.Style3.NewsStyle3Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/News3Theme" />
+        <activity
+            android:name=".template.NewsCategory.Style4.NewsStyle4Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/News4Theme" />
+        <activity
+            android:name=".template.NewsCategory.Style5.NewsStyle5Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/News5Theme" />
+        <activity
+            android:name=".template.NewsCategory.Style6.NewsStyle6Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/News6Theme" />
+        <activity
+            android:name=".template.NewsCategory.Style7.NewsStyle7Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/News7Theme" />
+        <activity
+            android:name=".template.ContentCategory.Style1.WordPressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Content1Theme" />
+        <activity
+            android:name=".template.ContentCategory.Style2.TwitterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Content2Theme" />
+        <activity
+            android:name=".template.ContentCategory.Style3.InstagramActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Content3Theme" />
+        <activity
+            android:name=".template.ContentCategory.Style4.YoutubeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Content4Theme" />
+        <activity
+            android:name=".template.ContentCategory.Style5.TumblrActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Content5Theme" />
+    </application>
+
+</manifest>

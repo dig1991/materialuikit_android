@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize">
+
+            <include layout="@layout/dummy_content"/>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/menuNavigation15menuBg"
+        app:itemTextColor="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/menuNavigation15menuBg"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:onClick="onClick"
+                    android:src="@drawable/ic_arrow_back" />
+
+                <EditText
+                    style="@style/MenuNavigation15Input"
+                    android:drawableRight="@drawable/ic_search_grey"
+                    android:elevation="3dp"
+                    android:hint="Search" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menuContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button1"
+                    style="@style/MenuNavigation15ButtonMenu"
+                    android:drawableRight="@drawable/ic_arrow_menu"
+                    android:onClick="onClick"
+                    android:text="Feed"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/button2"
+                    style="@style/MenuNavigation15ButtonMenu"
+                    android:drawableRight="@drawable/ic_arrow_menu"
+                    android:onClick="onClick"
+                    android:text="Explore"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/button3"
+                    style="@style/MenuNavigation15ButtonMenu"
+                    android:drawableRight="@drawable/ic_arrow_menu"
+                    android:onClick="onClick"
+                    android:text="Photos"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/button4"
+                    style="@style/MenuNavigation15ButtonMenu"
+                    android:drawableRight="@drawable/ic_arrow_menu"
+                    android:onClick="onClick"
+                    android:text="Videos"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/button5"
+                    style="@style/MenuNavigation15ButtonMenu"
+                    android:drawableRight="@drawable/ic_arrow_menu"
+                    android:onClick="onClick"
+                    android:text="Messages"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/buttonSetting"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:onClick="onClick"
+                    android:src="@drawable/ic_setting" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/buttonProfile"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:onClick="onClick"
+                    app:cardBackgroundColor="@color/menuNavigation15menuProfileBg"
+                    app:cardCornerRadius="28dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:src="@drawable/ic_profile" />
+
+                </android.support.v7.widget.CardView>
+
+                <ImageButton
+                    android:id="@+id/buttonLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:onClick="onClick"
+                    android:src="@drawable/ic_logout_red" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

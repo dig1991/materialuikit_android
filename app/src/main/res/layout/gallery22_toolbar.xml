@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="78dp"
+    android:background="?attr/colorPrimary">
+
+    <ImageView
+        android:id="@+id/button_nav_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="0dp"
+        android:src="@drawable/ic_nav_back" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="62dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Photo Portfolio"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="1 of 24 Photos"
+            android:textColor="@color/gallery22fontGrayTitle"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

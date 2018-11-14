@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:minHeight="120dp"
+        app:cardCornerRadius="0dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter" />
+
+                <ImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_below="@+id/imageMain"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-21dp"
+                    android:src="@drawable/profiile_pic" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgProfile"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_horizontal"
+                    android:text="Christina"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:gravity="center_horizontal"
+                    android:text="i hour"
+                    android:textColor="@color/activity19fontGray"
+                    android:textSize="12sp" />
+
+                <View
+                    android:id="@+id/splitter"
+                    android:layout_marginTop="68dp"
+                    android:layout_below="@+id/imageMain"
+                    android:background="@color/activity19Splitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/counterContainer"
+                    android:layout_below="@+id/splitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:drawableLeft="@mipmap/ic_love_grey_small"
+                        android:drawablePadding="4dp"
+                        android:text="34"
+                        android:textColor="@color/activity19fontGray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawableLeft="@mipmap/ic_viewer_grey_small"
+                        android:drawablePadding="4dp"
+                        android:gravity="right"
+                        android:text="456"
+                        android:textColor="@color/activity19fontGray"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

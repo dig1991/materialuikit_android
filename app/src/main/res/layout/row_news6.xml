@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/activity9ChatBackground"
+    android:foreground="?attr/selectableItemBackground">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:minHeight="180dp">
+
+
+        <ImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profiile_pic" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:text="Michael Adams"
+            app:layout_constraintLeft_toRightOf="@+id/imageProfile"
+            app:layout_constraintTop_toTopOf="@+id/imageProfile" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:text="15 min"
+            app:layout_constraintBottom_toBottomOf="@+id/imageProfile"
+            app:layout_constraintLeft_toLeftOf="@+id/name" />
+
+        <ImageView
+            android:id="@+id/buttonBookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="0dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageProfile"
+            app:srcCompat="@drawable/ic_bookmark" />
+
+        <ImageView
+            android:id="@+id/imageMain"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:layout_marginTop="24dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintLeft_toLeftOf="@+id/imageProfile"
+            app:layout_constraintTop_toBottomOf="@+id/imageProfile"
+            app:srcCompat="@drawable/loginsignup6_bg" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="0dp"
+            android:text="Tech Tent: Old Phone and safe social"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/imageMain"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageMain" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="8dp"
+            android:maxLines="10"
+            android:text="@string/lorem_ipsum4"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/title"
+            app:layout_constraintRight_toRightOf="@+id/title"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <TextView
+            android:id="@+id/separator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            app:layout_constraintBaseline_toBaselineOf="@+id/time"
+            app:layout_constraintLeft_toRightOf="@+id/time"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:id="@+id/category"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lifestyle"
+            app:layout_constraintBaseline_toBaselineOf="@+id/separator"
+            app:layout_constraintLeft_toRightOf="@+id/separator"
+            android:layout_marginLeft="8dp" />
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>
